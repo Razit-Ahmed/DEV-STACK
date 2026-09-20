@@ -17,7 +17,7 @@ const nav = () => {
 
             <div className='flex gap-2'>
                 <button className="">Sign In</button>
-                <button className="rounded-4xl bg-[#D91B7E] text-white m-2 px-3 py-2">Sign Up</button>
+                <button className="rounded-4xl bg-[#D91B7E] text-white m-2 px-5 py-1.5">Sign Up</button>
             </div>
 
 
