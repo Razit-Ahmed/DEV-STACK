@@ -1,17 +1,29 @@
-import React, { useState } from "react";
+import React, { useState, type Dispatch, type SetStateAction } from "react";
 import type { Itech } from "../types/techType";
 import { toast } from "react-toastify";
 
-const techCard = ({ tech }: { tech: Itech }) => {
+const techCard = ({
+  tech,
+  selectedTech,
+  setSelectedTech,
+}: {
+  tech: Itech;
+  selectedTech: Itech[];
+  setSelectedTech: Dispatch<SetStateAction<Itech[]>>;
+}) => {
   const [isSelected, setIsSelected] = useState(false);
 
   console.log(isSelected, setIsSelected, "here");
 
-  const handleAddStack =()=>{
-    setIsSelected(true)
+  const handleAddStack = () => {
+    setIsSelected(true);
     toast.success(`${tech.name} Is Added`);
+    setSelectedTech([...selectedTech,tech])
+  };
 
-  }
+
+  
+
   return (
     <div className="w-80 max-w-sm rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
       <div className="flex items-center justify-between">
@@ -39,12 +51,10 @@ const techCard = ({ tech }: { tech: Itech }) => {
       </div>
 
       <button
-        onClick={() => handleAddStack() }
-         
+        onClick={() => handleAddStack()}
         className={`mt-4 w-full rounded-lg bg-[#0B0F1A] py-2.5 text-sm font-medium text-white transition`}
         disabled={isSelected}
-        >
-        
+      >
         {isSelected === true ? "Added" : "Add to Stack"}
       </button>
     </div>

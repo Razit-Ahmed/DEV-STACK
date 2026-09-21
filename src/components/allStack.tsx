@@ -1,8 +1,15 @@
-import React from "react";
+import React, { type Dispatch, type SetStateAction } from "react";
 import TechCard from "./techCard"
 import Yourstack from "./yourstac";
+import type { Itech } from "../types/techType";
+interface IAllTechProps{
+    tech:Itech[];
+    selectedTech : Itech[];
+    setSelectedTech: Dispatch<SetStateAction<Itech[]>>
 
-const allStack = ({ tech }) => {
+}
+
+const allStack = ({ tech ,selectedTech,setSelectedTech, }) => {
   console.log(tech, "tech from all tech");
   return (
 
@@ -19,7 +26,7 @@ const allStack = ({ tech }) => {
        
       {tech.map((tech) => {
         return (
-     <TechCard key={tech.id} tech={tech}/>
+     <TechCard key={tech.id} tech={tech} selectedTech={selectedTech} setSelectedTech={setSelectedTech} />
         );
       })}
     </div>
@@ -27,7 +34,7 @@ const allStack = ({ tech }) => {
     <div>
 
 
-        <Yourstack/>
+        <Yourstack selectedTech={selectedTech} setSelectedTech={setSelectedTech}/>
 
 
     </div>
