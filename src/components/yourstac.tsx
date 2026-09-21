@@ -1,4 +1,4 @@
-import React, { type Dispatch, type SetStateAction } from "react";
+import  { type Dispatch, type SetStateAction } from "react";
 import type { Itech } from "../types/techType";
 
 interface IYourStackProps {
@@ -11,7 +11,7 @@ const YourStack = ({
   setSelectedTech,
 }: IYourStackProps) => {
 
-  const handleDelete = (id: string) => {
+  const handleDelete = (id: number) => {
     setSelectedTech((prev) => {
       return prev.filter((tech) => tech.id !== id);
     });

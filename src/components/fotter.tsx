@@ -1,4 +1,4 @@
-import React from "react";
+
 import Logo from "../assets/logo-text.png";
 
 const fotter = () => {
@@ -47,7 +47,7 @@ const fotter = () => {
 
 {/* -------------------------------------gap line --------------------------------------- */}
 
-      <div class="divider"></div>
+      <div className="divider"></div>
 
 
 
