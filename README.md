@@ -1,32 +1,27 @@
-# React + TypeScript + Vite
+1. Project name : Dev Stack
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+2. DevStack is a simple and responsive web application for exploring development technologies. Users can view different technologies and add their favorite ones to build their own stack.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+3. Technologies Used
+React.js — For building the user interface and reusable components
+TypeScript — For type-safe and maintainable code
+Vite — For fast development and build tooling
+Tailwind CSS — For styling and responsive design
+DaisyUI — For reusable UI components
+React Toastify — For displaying notifications and alerts
+React Icons — For icons throughout the application
+JavaScript/ES6 — For application logic and functionality
+Git & GitHub — For version control and project management
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the Oxlint configuration
+ANSWERS
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
-
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+1. JSX is a syntax where we can write HTML-like code inside JavaScript.
+2. Props  pass data from  parent to  child component.
+State stores data to change inside a component.
+3. useState  store and update data in  component. 
+4. useEffect runs code when a component loads or changes. 
+5. A unique key need to identify each item and update .
+6. I pass data from parent to child using props
