@@ -13,10 +13,10 @@ const allStack = ({ tech ,selectedTech,setSelectedTech, }) => {
   console.log(tech, "tech from all tech");
   return (
 
-    <div>
+    <div className="mb-30">
 
-        <h2>Explore the Technologies</h2>
-        <p>Pick one technology per category to build your ideal stack.</p>
+        <h2 className=" font-bold text-5xl mt-15">Explore the <span className="bg-gradient-to-r from-[#FF5722] via-[#D81B7E] to-[#7C3AED] bg-clip-text text-transparent">Technologies</span></h2>
+        <p className="text-xl mt-5 mb-10">Pick one technology per category to build your ideal stack.</p>
          
 
          <div className="flex gap-5">

@@ -5,18 +5,18 @@ const hero = () => {
   return (
     <div className="flex justify-between container mx-auto w-10/11">
       <div >
-        <h2 className="text-[0F172A] text-bold text-6xl font-[inter] mt-20">
+        <h2 className="text-[0F172A] text-bold text-8xl font-[inter] mt-20">
           Build Your Ideal <br></br>
           <span className="bg-gradient-to-r from-[#FF5722] via-[#D81B7E] to-[#7C3AED] bg-clip-text text-transparent">
             Development Stack
           </span>{" "}
         </h2>
-        <p className="mt-10">
+        <p className="mt-10 text-2xl">
           Explore frontend, backend, database, and tooling options,<br></br>{" "}
           compare them side by side, and put together the stack that fits your
           <br></br> next project.
         </p>
-        <div className="mt-15 flex gap-5">
+        <div className="mt-25 mb-25 flex gap-5">
           <button className="rounded-lg bg-gradient-to-r from-[#FF5722] via-[#D81B7E] to-[#7C3AED] px-4 py-2 text-sm font-medium text-white">
             Explore Technologies
           </button>

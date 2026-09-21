@@ -27,7 +27,7 @@ function App() {
     </Suspense>
     
 
-    {/* <div class="divider"></div> */}
+    <div class="divider"></div>
     <Footer/>
 
     </>
